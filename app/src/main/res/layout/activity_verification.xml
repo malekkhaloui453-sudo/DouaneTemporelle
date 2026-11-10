@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_verification_nj"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    tools:context=".VerificationActivity">
+
+    <ImageView
+        android:id="@+id/img_passport_nj"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:contentDescription="Passport"
+        android:scaleType="fitCenter" />
+
+    <RelativeLayout
+        android:id="@+id/rl_details_nj"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_weight="0.7">
+
+        <TextView
+            android:id="@+id/tv_summary_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Détails du passeport"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_approuver_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_summary_nj"
+            android:layout_marginTop="16dp"
+            android:text="Approuver le saut temporel" />
+
+        <Button
+            android:id="@+id/btn_refuser_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_approuver_nj"
+            android:layout_marginTop="8dp"
+            android:text="Refuser (Risque de paradoxe)" />
+
+    </RelativeLayout>
+</LinearLayout>
